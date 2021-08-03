@@ -22,3 +22,8 @@ D: 3min 2s
 C: 1. Experience in calculateSubtotal was useful that it lessen the things to do and to integrate created functions 2. Time was less than expected
 A: 1. Learn from previous mistakes 2. Keep time within planned
 
+Function name: calculate
+P: 2min
+D: 37s
+C: 1. Integration of previous functions is well used 
+A: 1. May use fewer line of codes 2. Maintain the time which is less than planned
