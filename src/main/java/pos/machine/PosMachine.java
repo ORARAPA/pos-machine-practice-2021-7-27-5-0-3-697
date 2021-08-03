@@ -26,6 +26,18 @@ public class PosMachine {
         return itemList;
     }
 
+    public int countQuantity(List<String> itemList, String currentItem) {
+        int count = 0;
+
+        for(String item: itemList){
+            if(item.equals(currentItem)){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
 
     public int calculate(List<String> itemList) {
         return 0;
@@ -38,6 +50,7 @@ public class PosMachine {
 
 
     public int calculateSubtotal(List<String> itemList) {
+
         return 0;
     }
 
