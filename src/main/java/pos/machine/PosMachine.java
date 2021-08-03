@@ -41,7 +41,8 @@ public class PosMachine {
 
 
     public int calculate(List<String> itemList) {
-        return 0;
+        int totalPrice = calculateTotal(itemList);
+        return totalPrice;
     }
 
 
