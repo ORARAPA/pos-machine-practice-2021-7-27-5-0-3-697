@@ -2,16 +2,17 @@ package pos.machine;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static pos.machine.ItemDataLoader.loadAllItemInfos;
 
 public class PosMachine {
+    List<ItemInfo> itemInfos = loadAllItemInfos();
     public String printReceipt(List<String> barcodes) {
         return null;
     }
 
     public List<String> getValuesFromBarcode(List<String> barcodes) {
-        List<ItemInfo> itemInfos = loadAllItemInfos();
         List<String> itemList = new ArrayList<>();
 
         //get name of what is in the cart using the barcodes
@@ -26,7 +27,7 @@ public class PosMachine {
         return itemList;
     }
 
-    public int countQuantity(List<String> itemList, String currentItem) {
+    public static int countQuantity(List<String> itemList, String currentItem) {
         int count = 0;
 
         for(String item: itemList){
@@ -49,15 +50,26 @@ public class PosMachine {
     }
 
 
-    public int calculateSubtotal(List<String> itemList) {
+    public int calculateSubtotal(List<String> itemList, String currentItem) {
+        int getQuantityofItem =0;
+        int getPriceofItem =0;
+        int subtotal = 0;
 
-        return 0;
+        for (ItemInfo item : itemInfos) {
+            if (item.getName().equals(currentItem)){
+                getPriceofItem = item.getPrice();
+            }
+        }
+
+        subtotal = getQuantityofItem * getPriceofItem
+
+        return subtotal;
     }
 
 
     public int calculateTotal(List<String> itemList) {
-
-        return 0;
+       return 0;
     }
+
 
 }
