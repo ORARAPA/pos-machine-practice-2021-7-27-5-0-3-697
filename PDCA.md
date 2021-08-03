@@ -12,6 +12,13 @@ A: 1. Should do easier tasks first to not take a long time
 
 Function name:  calculateSubtotal
 P: 20min
-D: 20min 24s
+D: 30min 24s
 C: 1. Had to change it a lot since I was doing long codes instead of using previous functions 2. Added parameter to lessen line of codes
 A: 1. Keep on basing in context map alone making it hard to modify classes instead of just adding parameters
+
+Function name:  calculateTotal
+P: 5min
+D: 3min 2s
+C: 1. Experience in calculateSubtotal was useful that it lessen the things to do and to integrate created functions 2. Time was less than expected
+A: 1. Learn from previous mistakes 2. Keep time within planned
+
