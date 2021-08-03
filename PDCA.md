@@ -27,3 +27,12 @@ P: 2min
 D: 37s
 C: 1. Integration of previous functions is well used 
 A: 1. May use fewer line of codes 2. Maintain the time which is less than planned
+
+Function name: renderReceipt
+P: 5min
+D: 15min, 8s
+C: 1. Encountered erros in printing: didn't produce expected results 2. Issues on variables were found
+A: 1. Check closely per function if all will produce what is expected
+
+
+Actions: Try to keep time as much as possible to the planned; Closely check on what are expected outputs on each function to avoid finding erros at the end; Parameters can adjust to make coding easier 
