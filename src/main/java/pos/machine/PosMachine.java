@@ -68,7 +68,14 @@ public class PosMachine {
 
 
     public int calculateTotal(List<String> itemList) {
-       return 0;
+        List<String> distinctItems = itemList.stream().distinct().collect(Collectors.toList()); //get distinct items in list
+        int totalPrice = 0;
+
+        for(int i=0; i<distinctItems.size();i++){
+            totalPrice = totalPrice + calculateSubtotal(itemList, distinctItems.get(i));
+        }
+
+        return totalPrice;
     }
 
 
